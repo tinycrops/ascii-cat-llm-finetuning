@@ -1,0 +1,13 @@
+ASCII cat training data format proof
+source repo: /tmp/ascii-cat-llm-finetuning
+source data: /tmp/ascii-cat-llm-finetuning/src/dataset/ascii_art/animals/cat
+samples: 201
+width range: 7..46 chars
+height range: 3..18 lines
+files ending with newline: 59/201
+non-basic-ascii visible chars: ¬·òóˍˎ˚˜̳ωᴥ•∧│╱▽　、。〵しじつづノフミヽ乀二／＞＼＿ﾉ￣𝕏
+
+Training formatting contract observed in repo:
+1. create_dataset.py reads every content.txt with f.read() and stores it unchanged in the ascii column.
+2. train.py inserts that ascii value inside <ascii>...</ascii> in OUTPUT_ASCII_PROMPT.
+3. The animation renders the same raw text in a monospace <ascii> block and shows raw/prompt SHA-256 prefixes.
