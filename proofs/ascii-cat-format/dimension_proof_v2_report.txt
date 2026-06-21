@@ -1,0 +1,18 @@
+ASCII cat dimension proof v2
+
+Measured sources:
+apehex: 92 items, width 7..79, height 3..83
+asciiart.eu: 84 items, width 7..79, height 3..83
+repo: 201 items, width 7..46, height 3..18
+xmission: 156 items, width 7..88, height 3..177
+
+Rendered representative sources:
+apehex: 92 items, width 7..79, height 3..83
+asciiart.eu: 84 items, width 7..79, height 3..83
+repo: 201 items, width 7..46, height 3..18
+xmission: 60 items, width 8..88, height 3..177
+
+XMission full measured catalog: 156 items; rendered dimension-stratified subset: 60
+ApeHex source: apehex/ascii-art, asciiart/train/animals.parquet, cat-family labels/captions.
+Renderer change from v1: adaptive multi-panel fit plus global width/height scatterplot.
+Original v1 script intentionally left unchanged.
